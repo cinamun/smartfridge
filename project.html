@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+<body>
+
+    <div class="header">
+
+
+        <h1><a href="index.html"><img src="images/Home.png" style=width:101px;height:25px hspace=20></a><a href="aboutme.html"><img src="images/About.png" alt="About" style="width:128px;height:25px" hspace=20></a><a href=project.html><img src="images/Project.png" alt="Project" style="width:181px;height:25px" hspace=20></a></h1>
+    </div>
+
+    <div class="content">
+      <h2>Overview</h2>
+        <p>The Automated Smart Fridge is a small application installed in the fridge that sends real-time data about the fridge to the user. It includes data about the fridge temperature, inventory list and how often the appliance is used. It works to improve the experience of using a fridge, so it’s not just as a cold storage unit, but an intelligent appliance.</p>
+        <p>Leveraging off of open-source hardware and IoT technologies, the user doesn’t have to worry about replacing their fridge. This tool can be utilised by the customer to get a better understanding of what is going on in their fridge.</p>
+<!-- Break -->
+      <h2>Motivation</h2>
+          <p>As we move further into automation, companies are selling smarter appliances. Unfortunately, these appliances are very expensive. Using IoT infrastructure, The Automated Smart Fridge is a cost-effective alternative to what’s out there in the market. It is a simple, cheap alternative to the commercial smart fridge.</p>
+          <p>The Automated Smart Fridge can also be adopted in restaurants, hospitals or any commercial space that wants to monitor a refrigeration system. For example, in a restaurant, kitchen staff can monitor the inventory and temperature of the fridge. They can use this information can be used to make decisions about when to buy more ingredients and how long their can store food.</p>
+<!-- Break -->
+      <h2>Description</h2>
+        <p>The Automated Smart Fridge would be a relatively small tool that has two sensors attached inside the fridge. An IR camera would be used to take photos of inside the fridge. This would allow it to use visual recognition for the customer. A barcode scanner can be placed on the side of the fridge panel, providing a level of inventory logging. The IR camera and the two sensors would communicate with a WiFi enabled Arduino that would transmit data remotely to the user. The barcode scanner would do the same thing. The user would have the ability to view their data on their phone via an app. Any time someone would remove contents from the fridge, the inventory stock would be updated and that information would be sent to the user as either a push notification or text.</p>
+        <p>The sensors are an integral part of the application. Not only does it update the user about often the fridge is opened, but also what the temperate of the fridge is. This is a core component of the application. Understanding what the temperate of the fridge is, allows the user to understand exactly what is happening in the fridge. For example, if someone’s milk went off because the fridge was too warm, they can check to see exactly what the temperature was inside. Although a lot of modern fridges might have this, however, older ones may not or may have various temperatures inside the fridge. Some parts could be warmer than others. This would be a more cost-effective way to manage the fridge, as opposed to buying a brand new one.</p>
+        <p>The data would be displayed on a dashboard, where it would be refreshed every 15 minutes. The dashboard would have three graphs: a line graph, bar graph and a scatter plot. These charts would be labelled as temperature on the y axis and time on the x axis, helping break down the complexity of the data. In terms of how times the fridge was opened, it would be a simple bar graph. Presenting data in this way would make it easier for the user to interact with the application. The idea is to create a simpler, cheaper alternative to what is out there in the market.</p>
+        <p>In order to make this project commercially viable, the data would have to be hosted somewhere. This would allow the project to exist as a service for users, especially in the case of the hospitality industry, where kitchens can have multiple fridges, and it can be a manual process to monitor things. Integrating the Amazon EC2 cloud solution with the Automated Smart Fridge, the data collected from the sensors can be hosted on the cloud. This opens up the market for The Automated Smart Fridge, allowing it to exist both at home and also commercial spaces. Targeting the commercial space, allows different tiers of subscription to exist. This can help minimise the complexity and a clunky UI.</p>
+<!-- Break -->
+      <h2>Tools and Technologies</h2>
+        <p>This application uses a plethora of different hardware and software. In terms of hardware, the tool will use two sensors – a temperate sensor and a fridge opening sensor. An IR camera would take photos inside the fridge to send to the user as well a fitted barcode scanner that would be fixed to the side of the fridge door. The scanner and IR camera act to create an inventory logging system for the user. The sensors provide real-time data of the status of the fridge.</p>
+        <p>In terms of software, the application would be written in Python, with the data transmitted using REST API. The application would then be hosted on AWS EC2 where the data can be stored on cloud database.</p>
+<!-- Break -->
+      <h2>Future Outcome and Impact</h2>
+        <p>If this project were to be successful, it would be a cost-effective solution for having an automated fridge. The original is that, what’s out there in the market is too expensive. This would tackle that by providing the user with a device that they can place on their existing fridge.</p>
+        <p>If this project were to launch, it would have a commercial impact. Industries would be able to leverage off of this technology to monitor cold storage units. The analytics behind it can be used to check their inventory and make sure stock does not perish.</p>
+
+
+    </div>
+
+<footer>
+  <p class="caption">Website created with the help of 3WSchools</p>
+</footer>
+</body>
